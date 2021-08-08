@@ -1,0 +1,17 @@
+.nav {
+    grid-area: n;
+    background-color: gray;
+  }
+
+  .item {
+      color: ivory;
+  }
+
+  .item.active {
+      color: greenyellow;
+  }
+
+  .super {
+      color: mediumblue;
+  }
+  

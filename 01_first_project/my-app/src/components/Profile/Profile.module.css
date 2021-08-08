@@ -1,0 +1,15 @@
+.content img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .content {
+    grid-area: c;
+    background-color: hotpink;
+  }
+
+  .item {
+      color: rgb(109, 47, 255);
+  }
+
+
