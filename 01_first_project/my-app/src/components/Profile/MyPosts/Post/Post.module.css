@@ -1,0 +1,12 @@
+  .item {
+      color: rgb(109, 47, 255);
+  }
+
+  .item img {
+    max-width: 150px;
+    height: 80px;
+    border-radius: 50px;
+  }
+
+
+
