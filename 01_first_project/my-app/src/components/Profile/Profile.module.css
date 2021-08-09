@@ -1,12 +1,4 @@
-.content img {
+.app-wrapper-content img {
     height: 150px;
     width: 100%;
   }
-
-  .content {
-    grid-area: c;
-    background-color: hotpink;
-  }
-
-
-

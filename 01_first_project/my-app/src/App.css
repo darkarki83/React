@@ -53,3 +53,8 @@ ul li {
   grid-template-columns: 200px 1fr;
   grid-gap: 10px;
 }
+
+.app-wrapper-content {
+  grid-area: c;
+    background: lightskyblue;
+}
