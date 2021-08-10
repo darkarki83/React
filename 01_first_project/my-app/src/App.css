@@ -55,6 +55,6 @@ ul li {
 }
 
 .app-wrapper-content {
-  grid-area: c;
+    grid-area: c;
     background: lightskyblue;
 }
