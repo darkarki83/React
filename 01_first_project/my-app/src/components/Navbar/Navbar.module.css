@@ -1,17 +1,24 @@
 .nav {
+    padding-left: 10px;
+    padding-top: 10px;
     grid-area: n;
     background-color: gray;
   }
 
-  .item {
-      color: ivory;
-  }
-
-  .item.active {
-      color: greenyellow;
+  .item a {
+      color: white;
+      text-decoration: none;
   }
 
   .super {
       color: mediumblue;
   }
+
+  .item a.activeLink {
+      color: gold;
+  }
+
+  
+
+
   
