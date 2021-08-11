@@ -12,6 +12,11 @@
     color:gold
 }
 
+.dialog a {
+    text-decoration: none;
+    color:hotpink
+}
+
 
 .messages {
     padding: 20px;
