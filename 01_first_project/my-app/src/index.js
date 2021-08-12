@@ -9,7 +9,7 @@ let postData = [
   {id: 2, msg: 'Its my first post', likesCount: 19},
   {id: 2, msg: 'Yo yo yo', likesCount: 250},
   {id: 2, msg: 'Next level', likesCount: 1589}
-]
+];
 
 let dialogsData = [
   { id: 1, name: 'Katia' },
@@ -33,7 +33,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
+// If you want to start measuring performance in yougigr app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

@@ -21,9 +21,9 @@ const App = (props) => {
         <div className="app-wrapper-content" >
           <Route path="/profile" render={ () => <Profile postData={props.postData} />} />
           <Route path="/dialogs" render={ () => <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} />
-          <Route path="/music" component={Music} />
-          <Route path="/news" component={News} />
-          <Route path="/setting" component={Settings} />
+          <Route path="/music" render={ () => <Music  />} />
+          <Route path="/news" render={ () => <News />} />
+          <Route path="/setting" render={ () => <Settings />} />
         </div>
       </div>
     </BrowserRouter>
