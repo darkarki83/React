@@ -2,3 +2,7 @@
     text-decoration: none;
     color:hotpink
 }
+
+.dialog img {
+    max-width: 100px;
+}
