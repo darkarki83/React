@@ -21,6 +21,13 @@ let state = {
             { id: 3, msg: 'Hi artkdev' },
             { id: 4, msg: 'yo yo' }
           ]
+    },
+    friendsBar : {
+        friends : [
+            { id: 1, name: "Den" },
+            { id: 2, name: "Uri" },
+            { id: 3, name: "Art" }
+        ]
     }
 } 
 

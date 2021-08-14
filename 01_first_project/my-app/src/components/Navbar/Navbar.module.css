@@ -17,6 +17,9 @@
   .item a.activeLink {
       color: gold;
   }
+  .center {
+      text-align: center;
+  }
 
   
 
