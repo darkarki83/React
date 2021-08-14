@@ -5,7 +5,7 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
 
-  let postsElements = props.postData.map( (p) => <Post message={p.msg} like={p.likesCount} />)
+  let postsElements = props.state.postData.map( (p) => <Post message={p.msg} like={p.likesCount} />)
 
   return (
     <div className={s.postsBlock}>
