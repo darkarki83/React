@@ -12,8 +12,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 const App = (props) => {
 
   return (
-    <BrowserRouter>
-    
       <div className="app-wrapper" >
         <Header />
         <Navbar state={props.state.friendsBar} />
@@ -26,7 +24,6 @@ const App = (props) => {
           <Route path="/setting" render={ () => <Settings />} />
         </div>
       </div>
-    </BrowserRouter>
   );
 }
 

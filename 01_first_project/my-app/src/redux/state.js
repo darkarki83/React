@@ -3,8 +3,8 @@ let state = {
         postData : [
             {id: 1, msg: 'Hi how are you', likesCount: 121},
             {id: 2, msg: 'Its my first post', likesCount: 19},
-            {id: 2, msg: 'Yo yo yo', likesCount: 250},
-            {id: 2, msg: 'Next level', likesCount: 1589}
+            {id: 3, msg: 'Yo yo yo', likesCount: 250},
+            {id: 4, msg: 'Next level', likesCount: 1589}
           ]
     },
     dialogsPage : {
