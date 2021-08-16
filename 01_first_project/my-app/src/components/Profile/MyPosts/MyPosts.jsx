@@ -10,8 +10,8 @@ const MyPosts = (props) => {
   let newPostElement = React.createRef();
 
   const onButtonClick = () => {
-    let text = newPostElement.current.value;
-    alert(text);
+    let text = newPostElement.current.value
+    props.addPost(text)
   }
 
   return (
