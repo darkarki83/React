@@ -1,5 +1,5 @@
 let store = {
-    _rerenderEntireTree() {
+    _callSubscriber() {
         console.log("ArtKDev")
     },
     _state : {
@@ -47,18 +47,17 @@ let store = {
         this._state.profilePage.postData.push(newPost)
         this._state.profilePage.newPostText = ''
         console.log(this._state.profilePage.newPostText)
-        this._rerenderEntireTree(this._state)
+        this._callSubscriber(this._state)
     },
     updateNewPostText(newText) {
         //console.log(newText)
         this._state.profilePage.newPostText = newText;
-        this._rerenderEntireTree(this._state)
+        this._callSubscriber(this._state)
     },
     subscribe(observer) {
-        this._rerenderEntireTree = observer;
+        this._callSubscriber = observer;
     },
-    //window.state = this._state
-
 }
 
 export default store;
+window.store = store
