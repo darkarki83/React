@@ -1,3 +1,8 @@
+let store = {
+
+}
+
+
 let rerenderEntireTree = () => {
 
 }
