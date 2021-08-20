@@ -2,29 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { addPost } from './redux/state';
-import { updateNewPostText } from './redux/state';
+//import { addPost } from './redux/state';
+//import { updateNewPostText } from './redux/state';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { subscribe } from './redux/state';
+//import { subscribe } from './redux/state';
 import reportWebVitals from './reportWebVitals';
-import state from "./redux/state"
+import store from "./redux/state"
 
 //addPost("New man")
 
-let rerenderEntireTree = (state) => {
+let _rerenderEntireTree = (store) => {
     ReactDOM.render(
       <React.StrictMode>
         <BrowserRouter>
-          <App state={state} addPost={addPost} updateNewPostText={updateNewPostText} />
+          <App state={store.getState()} addPost={store.addPost} updateNewPostText={store.updateNewPostText} />
         </BrowserRouter>
       </React.StrictMode>,
       document.getElementById('root')
     );
   }
 
-  rerenderEntireTree(state)
+  _rerenderEntireTree(store.getState())
 
-  subscribe(rerenderEntireTree);
+  store.subscribe(_rerenderEntireTree);
 
 
   
