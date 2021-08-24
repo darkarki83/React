@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import store from "./redux/state"
+import store from "./redux/redux_store"
 
 //addPost("New man")
 
@@ -21,7 +21,10 @@ let rerenderEntireTree = (state) => {
 
   rerenderEntireTree(store.getState())
 
-  store.subscribe(rerenderEntireTree);
+  store.subscribe(() => {
+    let state = store.getState()
+    rerenderEntireTree(state)
+  });
 
 
   
