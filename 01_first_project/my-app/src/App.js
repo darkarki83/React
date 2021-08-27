@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
+import NavbarContainer from './components/Navbar/NavbarContainer';
 import Profile from './components/Profile/Profile';
 import Music from './components/Music/Music';
 import News from './components/News/News';
@@ -14,11 +14,11 @@ const App = (props) => {
   return (
       <div className="app-wrapper" >
         <Header />
-        <Navbar state={props.store.getState().friendsBar} />
+        <NavbarContainer  />
         {/*<Profile />*/}
         <div className="app-wrapper-content" >
-          <Route path="/profile" render={ () => <Profile store={props.store} />} />
-          <Route path="/dialogs" render={ () =>  <DialogsContainer store={props.store} />} />
+          <Route path="/profile" render={ () => <Profile  />} />
+          <Route path="/dialogs" render={ () =>  <DialogsContainer />} />
           <Route path="/music" render={ () => <Music  />} />
           <Route path="/news" render={ () => <News />} />
           <Route path="/setting" render={ () => <Settings />} />

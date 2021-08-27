@@ -5,8 +5,8 @@ import Friends from './Friends/Friends';
 
 
 const Navbar = (props) => {
-
-  let friendsElements = props.state.friends.map( (f) => {
+  debugger
+  let friendsElements = props.friends.map( (f) => {
     return <Friends name={f.name} />
   })
 
